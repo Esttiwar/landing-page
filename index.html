@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My landing page</title>
+    <link rel="icon" type="icon" href="https://i.postimg.cc/g2jKNnBk/2expo.jpg">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Bienvenido a mi landing page</h1>
+        <h2>¡Conoce más sobre mí!</h2>
+        <a href="#bio" class="btn">¡Adelante!...</a>
+      </div>
+    </section>
+    <a name="biog" id="bio"></a>
+    <div class="bio">
+      <div class="card-bio">
+        <div class="header">
+          <a href="#">
+            <img src="https://i.postimg.cc/g2jKNnBk/2expo.jpg" alt="Fotografía de perfil del dueño del sitio">
+          </a>
+          <h2>Jhon Estiwar Rodriguez</h2>
+          <h4>Aprendiz Front-end</h4>
+          <h3>Sobre mí</h3>
+          <h4>Estudiante de Astronomía de la UdeA.<br>
+            Fotógrafo y Astrofotógrafo amateur.<br>
+            Apasionado por la programación y la tecnología.<br>
+            Me gusta asumir retos, trabajar en equipo y aprender constantemente.</h4>
+        </div>
+        <div class="descripcion">
+          <h3>Experiencia</h3>
+          <p>
+            Lenguajes de programación como Python, algunas librerías de éste como Turtle, Numpy, Pandas y Matplotlib. Lo anterior me dejó buenas bases para la lógica de la programación, tan requerida en JavaScript.
+            Actualmente estoy aprendiendo HTML+CSS+JavaScript para perfilarme como todo un desarrollador Front-end.
+          </p>
+          <h3>Proyectos</h3>
+          <p>
+            Recién comienzo en este mundo, así que por el momento he hecho un juego snake en Python con la librería Turtle a partir de un código base.
+            Mi idea es seguir aprendiendo y crear más proyectos.
+          </p>
+          <div class="social">
+            <h3 class="lowcase">Conoce mi trabajo y contáctame:</h3>
+            <a href="https://github.com/Esttiwar" target="_blank" class="social_link github"></a>
+            <a href="https://www.flickr.com/photos/140239439@N03/" target="_blank" class="social_link flickr"></a>
+            <a href="https://twitter.com/Jhon_esti" target="_blank" class="social_link twitter"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pantalla">
+      <div class="cuerpo_calculadora">
+        <form>
+          <h1>Calculadora</h1>
+            <p id="resultado">Resultado</p>
+            <div>
+              <label for="numero_a">Primer número</label>
+              <input type="number" name="numero_a" placeholder="Primer número" id="numero_a">
+            </div>
+            <div>
+              <label for="numero_b">Segundo número</label>
+              <input type="number" name="numero_b" placeholder="Segundo número" id="numero_b">
+            </div>
+            <div class="buttons">
+              <input type="button" value="+" id="suma">
+              <input type="button" value="-" id="resta">
+              <input type="button" value="x" id="multiplicacion">
+              <input type="button" value="/" id="division">
+            </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <div>
+          <span>✷ ©Jhon Estiwar Rodríguez Correa - 2020 - Bootcamp Coderise ✷<span>
+        <div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

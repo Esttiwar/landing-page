@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+p {
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  padding: 0px 30px;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url(https://i.postimg.cc/Zq7K4rBG/MG-1892.jpg);
+    /* background-image: url(https://i.postimg.cc/CKmYrm73/Ori-n-flama-caballo.jpg); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white;
+    border-radius: 20px;
+
+    /* Background styles */
+    background-color: rgba(147, 112, 219, 0.6);
+}
+
+.hero .btn:hover {
+  color: #121C1F;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #5684c9;
+  font-family: 'Nunito', sans-serif;
+  padding: 0 20px;
+}
+
+.card-bio {
+  display: flex;
+  width: 900px;
+  height: auto;
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  border-right: 5px solid #ddd;
+}
+
+.descripcion {
+  background: #fbfbfb;
+  border-radius: 20px;
+}
+
+.header, .descripcion {
+  padding: 20px;
+  text-align: center;
+}
+
+.header a {
+  position: relative;
+  display: block;
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0,0,0, 0.06);
+  margin: 20px 30px;
+  transition: 0.2s;
+}
+
+.header a:hover img {
+  box-shadow: 0 0 0 12px rgba(0,0,0, .1);
+}
+
+.header h2 {
+  color: #f0522a;
+  margin: 1px;
+}
+
+.header h3 {
+  text-transform: uppercase;
+  color: #5684c9;
+  margin: 2px;
+}
+
+.header h4 {
+  margin-bottom: 11px;
+  margin-top: 0;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.descripcion {
+  position: relative;
+}
+
+.descripcion p {
+  margin: 20px 30px;
+}
+
+.descripcion .social {
+  margin-top: 25px;
+}
+
+.descripcion h3 {
+  text-transform: uppercase;
+  color: #5684c9;
+}
+
+.social {
+  display: block;
+}
+
+.social .lowcase {
+  text-transform: inherit;
+  color: #5684c9;
+}
+
+.social_link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  background-size: 50px 50px;
+}
+
+.social_link.facebook {
+  background-image: url("https://i.postimg.cc/TPLDdCSL/facebook.png");
+}
+
+.social_link.flickr {
+  background-image: url("https://i.postimg.cc/RCs4d4qm/flickr.png");
+}
+
+.social_link.github {
+  background-image: url("https://i.postimg.cc/XNQ7P9HT/github.png");
+}
+
+.social_link.twitter {
+  background-image: url("https://i.postimg.cc/NF3gxkDV/twitter.png")
+}
+
+@media (max-width:640px) {
+  .card-bio {
+    display: block;
+    width: 450px;
+  }
+  .header {
+    padding: 20px 20px 5px 20px;
+    border: none;
+  }
+  .descripcion {
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+  }
+  .header h4 {
+    margin: 0;
+  }
+}
+
+.pantalla {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://i.postimg.cc/9QjGLZc2/mathematics-1509559-1920.jpg);
+  height: 557px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.cuerpo_calculadora {
+  position: absolute;
+  border: 3px;
+  border-style: outset;
+  border-radius: 13%;
+  margin: 90px 450px;
+  padding: 15px;
+  background: #685589;
+}
+
+.cuerpo_calculadora h1 {
+  font-family: 'Finger Paint', cursive;
+  text-shadow: 5px -1px rgba(0,0,0,.2);
+  margin: 10px 50px 50px 50px;
+  text-align: center;
+}
+
+.cuerpo_calculadora p {
+  font-family: 'Finger Paint', cursive;
+  border-style: solid;
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+}
+
+input {
+  widht: 100%;
+  margin-bottom: 20px;
+}
+
+.buttons input {
+  padding: 5px;
+  border-radius: 10%;
+  background-color: #F5C1C1;
+}
+
+#suma {
+  margin: 10px;
+  padding: 20px 15px;
+}
+
+#resta {
+  margin: 10px;
+  padding: 10px 15px;
+}
+
+#multiplicacion {
+  margin: 10px;
+  padding: 10px 15px;
+}
+
+#division {
+  margin: 10px;
+  padding: 10px 15px;
+}
+
+label {
+  font-family: 'Finger Paint', cursive;
+}
+
+footer {
+  /*margin: 26px;*/
+  margin: 0 aut;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Finger Paint', cursive;
+  background: #5684c9;
+}
